@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "CheckIdentifier": {
+      "commandName": "Project",
+      "commandLineArgs": "Ch1"
+    }
+  }
+}
