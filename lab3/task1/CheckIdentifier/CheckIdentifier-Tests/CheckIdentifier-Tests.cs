@@ -127,36 +127,34 @@ namespace CheckIdentifier_Tests
     public class CheckIdentifierMethod
     {
         [TestMethod]
-        public void correct_identiifier_Ch1_return_true()
+        public void correct_identiifier_Ch1_returns_true()
         {
             bool res = Program.CheckIdentifier("Ch1");
+
             Assert.AreEqual(true, res);
-            Assert.AreEqual(true, Program.CheckIdentifier("Number"));
-            Assert.AreEqual(true, Program.CheckIdentifier("UPPER"));
-            Assert.AreEqual(true, Program.CheckIdentifier("lower"));
         }
         [TestMethod]
-        public void correct_identiifier_Number_return_true()
+        public void correct_identiifier_Number_returns_true()
         {
             bool res = Program.CheckIdentifier("Number");
+
             Assert.AreEqual(true, res);
-            Assert.AreEqual(true, Program.CheckIdentifier("UPPER"));
-            Assert.AreEqual(true, Program.CheckIdentifier("lower"));
         }
 
         [TestMethod]
-        public void correct_identiifier_UPPER_return_true()
+        public void correct_identiifier_UPPER_returns_true()
         {
             bool res = Program.CheckIdentifier("UPPER");
+
             Assert.AreEqual(true, res);
 
-            Assert.AreEqual(true, Program.CheckIdentifier("lower"));
         }
 
         [TestMethod]
         public void correct_identiifier_lower_return_true()
         {
             bool res = Program.CheckIdentifier("lower");
+
             Assert.AreEqual(true, res);
         }
         [TestMethod]
