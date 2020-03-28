@@ -2,7 +2,7 @@
   "profiles": {
     "RemoveExtraBlanks": {
       "commandName": "Project",
-      "commandLineArgs": "input.txt "
+      "commandLineArgs": "input.txt output.txt"
     }
   }
 }
