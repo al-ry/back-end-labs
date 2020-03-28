@@ -26,6 +26,12 @@ namespace CheckIdentifier
 
         public static bool CheckIdentifier(string identifier)
         {
+            if (identifier.Length == 0)
+            {
+                Console.WriteLine("No");
+                Console.WriteLine("Empty Identifier");
+                return false;
+            }
             if (IsDigit(identifier[0]))
             {
                 Console.WriteLine("No");

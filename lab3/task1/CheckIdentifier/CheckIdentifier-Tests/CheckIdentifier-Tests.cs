@@ -134,6 +134,13 @@ namespace CheckIdentifier_Tests
             Assert.AreEqual(true, res);
         }
         [TestMethod]
+        public void empty_enditifier_returns_false()
+        {
+            bool res = Program.CheckIdentifier("");
+
+            Assert.AreEqual(false, res);
+        }
+        [TestMethod]
         public void correct_identiifier_Number_returns_true()
         {
             bool res = Program.CheckIdentifier("Number");
