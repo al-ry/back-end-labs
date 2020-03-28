@@ -4,7 +4,7 @@ namespace CheckIdentifier
 {
     public class Program
     {
-        static public bool IsDigit(char ch)
+        public static bool IsDigit(char ch)
         {
             return (ch >= '0' && ch <= '9');
         }
