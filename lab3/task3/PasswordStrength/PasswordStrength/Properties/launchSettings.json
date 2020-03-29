@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "PasswordStrength": {
+      "commandName": "Project",
+      "commandLineArgs": "aaabaaabf"
+    }
+  }
+}
