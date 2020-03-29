@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29905.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoveExtraBlanks", "RemoveExtraBlanks\RemoveExtraBlanks.csproj", "{9ED90586-D769-4B0B-81B4-10F8BC12E129}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RemoveExtraBlanks", "RemoveExtraBlanks\RemoveExtraBlanks.csproj", "{9ED90586-D769-4B0B-81B4-10F8BC12E129}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoveExtraBlanks-tests", "RemoveExtraBlanks-tests\RemoveExtraBlanks-tests.csproj", "{23A13DFB-FA99-471C-B043-CAA63DD9EAD5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{9ED90586-D769-4B0B-81B4-10F8BC12E129}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9ED90586-D769-4B0B-81B4-10F8BC12E129}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9ED90586-D769-4B0B-81B4-10F8BC12E129}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23A13DFB-FA99-471C-B043-CAA63DD9EAD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23A13DFB-FA99-471C-B043-CAA63DD9EAD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23A13DFB-FA99-471C-B043-CAA63DD9EAD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23A13DFB-FA99-471C-B043-CAA63DD9EAD5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
