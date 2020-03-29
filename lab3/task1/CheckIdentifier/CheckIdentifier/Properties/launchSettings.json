@@ -2,7 +2,7 @@
   "profiles": {
     "CheckIdentifier": {
       "commandName": "Project",
-      "commandLineArgs": "Ch1"
+      "commandLineArgs": "1Ch"
     }
   }
 }
