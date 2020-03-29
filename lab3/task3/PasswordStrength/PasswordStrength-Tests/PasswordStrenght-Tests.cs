@@ -244,7 +244,7 @@ namespace PasswordStrength_Tests
             Assert.AreEqual(expectedStrenght, res);
         }
         [TestMethod]
-        public void number_password_returns_password_16_strenght()
+        public void number_password_returns_password_7_strenght()
         {
             string password = "8";
             int expectedStrenght = 7;
