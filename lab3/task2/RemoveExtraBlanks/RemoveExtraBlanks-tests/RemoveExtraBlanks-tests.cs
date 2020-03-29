@@ -104,7 +104,7 @@ namespace RemoveExtraBlanks_tests
         [TestMethod]
         public void string_with_one_tab_should_returns_one_space_between_words()
         {
-            string str = "Hello\tworld ";
+            string str = "   \tHello   \t\t  world \t   ";
             string expected = "Hello world";
 
             string res = Program.RemoveExtraBlanks(str);
