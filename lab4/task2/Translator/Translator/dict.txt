@@ -1,0 +1,4 @@
+﻿кошка=cat
+собака=dog
+овощ=vegetable
+картошка=potato
