@@ -10,15 +10,7 @@ namespace MyNotesTests
     public class AddNoteTests
     {
         private string pathAdd = @"../../../TestsData/addTest.txt";
-        public Note GenerateNote(string message)
-        {
-            Note note = new Note
-            {
-                Content = message
-            };
-            return note;
-        }
-        public void AddNote(Note note)
+        public void AddNote(string note)
         {
             NotesRepository notesRepository = new NotesRepository();
             NotesRepository.SetPath(pathAdd);
@@ -27,12 +19,14 @@ namespace MyNotesTests
         [TestMethod]
         public void OneNotes_Should_Return_One_Note_In_File()
         {
-            var note = GenerateNote("home assignment");
+            var note = "home assignment";
 
             AddNote(note);
-            var noteMessage = new StreamReader(pathAdd).ReadLine();
 
-            Assert.AreEqual(note.Content, noteMessage);
+            
+            var expectedNoteMessage = new StreamReader(pathAdd).ReadLine();
+
+            Assert.AreEqual(note, expectedNoteMessage);
             
         }
     }

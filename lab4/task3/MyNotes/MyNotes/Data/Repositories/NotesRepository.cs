@@ -18,8 +18,12 @@ namespace MyNotes.Data.Repositories
         {
             _path = path;
         }
-        public void AddNote(Note note)
+        public void AddNote(string message)
         {
+            Note note = new Note()
+            {
+                Content = message
+            };
             var dstEncoding = Encoding.UTF8;
             bool appendMode;
             using (StreamReader reader = new StreamReader(_path))

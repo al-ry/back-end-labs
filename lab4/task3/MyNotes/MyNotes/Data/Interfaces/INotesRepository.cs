@@ -10,6 +10,6 @@ namespace MyNotes.Data.Interfaces
     public interface INotesRepository
     {
         List<Note> GetNotes();
-        void AddNote(Note note);
+        void AddNote(string message);
     }
 }

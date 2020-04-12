@@ -50,11 +50,7 @@ namespace MyNotes.Controllers
             Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
             var srcEncoding = Encoding.GetEncoding(1251);
             string noteStr = await new StreamReader(Request.Body, srcEncoding).ReadToEndAsync();
-            Note note = new Note()
-            {
-                 Content = noteStr
-            };
-            _notesRepository.AddNote(note);
+            _notesRepository.AddNote(noteStr);
             return Ok();
         }
         
