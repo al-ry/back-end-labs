@@ -24,7 +24,7 @@ namespace MyNotes.Controllers
         public NotesController(INotesRepository notesRepository)
         {
             _notesRepository = notesRepository;
-            NotesRepository.SetPath("Storage/notes1.txt");
+            NotesRepository.SetPath("Storage/notes.txt");
         }
 
         [Route("/")]
