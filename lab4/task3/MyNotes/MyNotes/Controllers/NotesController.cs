@@ -32,8 +32,7 @@ namespace MyNotes.Controllers
         {
             return "Usage: \nGET /notes/list HTTP/1.1 " +
                    "(Getting notes list)\n" +
-                   "POST /note/add HTTP/1.1 " + "(Adding note)\n" +
-                   "Format for POST query: \"Message\"";
+                   "POST /note/add HTTP/1.1 " + "(Adding note)\n";
         }
         [HttpGet]
         [Route("notes/list")]

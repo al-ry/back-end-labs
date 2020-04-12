@@ -58,9 +58,5 @@ namespace MyNotesTests
             Assert.AreEqual(expectedRes, res);
 
         }
-
     }
-
-
-
 }
