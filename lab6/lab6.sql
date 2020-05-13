@@ -136,17 +136,17 @@ INSERT INTO student_on_course (id_course, id_student) VALUES (3, 12);
 --1. отобразить количество курсов, на которые ходит более 5 студентов
 SELECT COUNT(amount) AS course_amount
 FROM (
-	SELECT COUNT(name) as amount
-	FROM course 
-	INNER JOIN student_on_course ON student_on_course.id_course = course.id_course
-	GROUP BY name
+	SELECT COUNT(*) as amount
+	FROM student_on_course 
+	GROUP BY id_course
 	HAVING COUNT(*) > 5) AS amount;
 	
 --2. отобразить все курсы, на которые записан определенный студент.
-SELECT id_student,name , GROUP_CONCAT(course.namename)
-FROM student
-INNER JOIN student_on_course ON student.id_student = student_on_course.id_student
-INNER JOIN student_on_course ON student_on_course.id_course = course.id_course
+SELECT  student.id_student,  student.name , GROUP_CONCAT(course.name)
+FROM student_on_course
+INNER JOIN student ON student.id_student = student_on_course.id_student
+INNER JOIN course ON student_on_course.id_course = course.id_course
+WHERE student.name = 'Виктор'
 GROUP BY student.id_student;
 
 -- 5. (5#) Может ли значение в столбце(ах), на который наложено ограничение foreign key,
@@ -232,8 +232,9 @@ HAVING SUM(orders.status) = 0;
 SELECT users.users_id, users.name, orders.status
 FROM users
 INNER JOIN orders ON users.users_id = orders.users_id
+WHERE orders.status = 1
 GROUP BY users.users_id
-HAVING orders.status = 1 AND COUNT(orders.status) > 5; 
+HAVING COUNT(orders.status) > 5;
 
 /*8. (#10)  В чем различие между выражениями HAVING и WHERE?
 WHERE сначала фильтрует по условию, а потом группирует(может быть идти с GROUP BY после WHERE так и без)
